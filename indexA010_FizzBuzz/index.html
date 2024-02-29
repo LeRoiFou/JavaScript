@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Demo...</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <br />
+    <div class="container">
+        <h1>FizzBuzz</h1>
+        <p id="demo">Fizz(3), Buzz(5), FIZZBUZZ (3/5)!</p>
+
+        <script>
+            // FizzBuzz!
+
+            // Instanciation d'un nombre réel
+            let i = 1;
+
+            // Tant que i <= à 100
+            while (i <= 100) {
+
+                // Si la valeur de i est divisible par 3 ET par 5...
+                if (i % 3 == 0 && i % 5 == 0) {
+
+                    // Affichage de la valeur de i + texte
+                    document.write(i + '. FIZZBUZZ!<br/>');
+                }
+
+                // Sinon si la valeur de i est uniquement divisible par 3
+                else if (i % 3 == 0) {
+
+                    // Affichage de la valeur de i + texte
+                    document.write(i + '. FIZZ!<br/>');
+                }
+
+                // Sinon si la valeur de i est uniquement divisible par 5
+                else if (i % 5 == 0) {
+
+                    // Affichage de la valeur de i + texte
+                    document.write(i + '. BUZZ!<br/>');
+                }
+
+                // Sinon si la valeur n'est ni divisible par 3 et/ou par 5
+                else {
+
+                    // Affichage de la valeur i
+                    document.write(i + '. <br/>');
+                }
+
+                // Incrémentation de 1
+                i++;
+            }
+
+
+        </script>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
