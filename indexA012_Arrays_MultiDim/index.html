@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Demo...</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <br />
+    <div class="container">
+        <h1>Multi-Dimensional Arrays</h1>
+        <p id="demo">Arrays of Arrays...</p>
+
+        <script>
+            // Arrays!
+
+            // Assingation d'un array
+            let towns = ["Las Vegas", "Chicago", "New York"];
+
+            // Assignation d'un array comprenant l'array précédent
+            let toppings = ["Pepperoni", "Cheese", "Mushrooms",
+                ["Bob", "Mary", "John"], towns];
+
+            // Affichage des données
+            document.write("Affichage des composants : " + toppings + "<br/>");
+            document.write("<br/>");
+
+            // Autre affichage : "Bob"
+            document.write("Affichage du 1er composant de l'array comprenant \
+            des noms : " + toppings[3][0] + "<br/>");
+            document.write("<br/>");
+
+            // Autre affichage : "Chicago"
+            document.write("Affichage du 2ème composant de l'array 'towns' compris\
+             dans l'array 'initial' : " + toppings[4][1] + "<br/>");
+            document.write("<br/>");
+
+            // Nombre de composants : ne compte pas les composants d'un array
+            // à l'intérieur d'un autre array
+            document.write("Nombre de composants dans l'array : "
+                + toppings.length + "<br/>");
+
+            // Nombre de composants à l'intérieur de l'array 'towns'
+            document.write("Nombre de composant dans l'array 'towns' : "
+                + toppings[4].length + "<br/>");
+            document.write("<br/>");
+
+            // Ajout d'un nouveau composant dans l'array 'towns'
+            towns.push("Denver");
+            document.write("Ajout d'un nouveau composant dans l'array 'towns'" +
+                "<br/>");
+            document.write("Affichage des composants : " + toppings + "<br/>");
+            document.write("Affichage des composants de l'array 'towns' compris\
+             dans l'array 'initial' : " + toppings[4] + "<br/>");
+
+
+
+            // document.write();
+
+
+        </script>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
