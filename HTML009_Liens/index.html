@@ -1,0 +1,125 @@
+<!-- 
+Lien : https://www.youtube.com/watch?v=68oSyuKVjeU
+Cours : Balise liens
+
+Recours à la balise liens
+
+Structure d'un body :
+<nav>
+    <header>
+        <main>
+            <footer>
+
+00:52:20
+Date : 15-04-24
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de l'onglet-->
+    <title>Cours HTML de zéro</title>
+    <!-- Icône de l'onglet -->
+    <link rel="shortcut icon" href="./logoHTML.png">
+</head>
+
+<body>
+    <!-- nav : navigation -->
+    <nav>
+        <!-- ul : unordered list -->
+        <ul>
+            <!-- li : list -->
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li>Formulaire</li>
+        </ul>
+    </nav>
+
+    <!-- Ent-tête principal de la page @ -->
+    <header>
+        <!-- Un seul h1 par page @ : 
+        Les h1, h2... h6 sont des blocs (prennent toute la largeur de la page)
+        -->
+        <h1>Ceci est le titre principal</h1>
+
+        <!-- p : paragraphe :
+        Les balises p ne sont pas des blocs
+        -->
+        <p>
+            <!-- em : en italique -->
+            Ceci est un <em>test</em> <br>
+            <!-- strong :  en gras-->
+            <strong>Texte en gras</strong>
+        </p>
+
+    </header>
+
+    <!-- Corps principal de la page @ -->
+    <main>
+
+        <!-- Ajout d'une liste ordonnée -->
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Ceci est une </li>
+                <li>liste dans </li>
+                <li>l'ordre</li>
+            </ol>
+        </section>
+
+        <section>
+            <!-- Ajout d'une image -->
+            <!-- alt = accessibilité pour les non-voyants -->
+            <h3>Image en HTML</h3>
+            <img src="./head.png" height="200" alt="">
+
+            <!-- Ajout d'un tableau -->
+            <div>
+                <h4>Tableau</h4>
+                <!-- Tableau configuré -->
+                <table border="4" cellpadding="10" cellspacing="4" style="text-align: center">
+                    <!-- En-tête du tableau -->
+                    <thead>
+                        <!-- Ligne du tableau (head)-->
+                        <tr>
+                            <!-- Colonnes du tableau (head)-->
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                        </tr>
+                    </thead>
+                    <!-- Corps du tableau -->
+                    <tbody>
+                        <!-- 1ère ligne du tableau (body) -->
+                        <tr>
+                            <!-- Colonnes du tableau (body) -->
+                            <td rowspan="2">Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <!-- 2ème ligne du tableau (body) -->
+                        <tr>
+                            <!-- Colonnes du tableau (body) -->
+                            <td colspan="2">Cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Les liens -->
+            <div>
+                <h5>Les liens &#128512;</h5>
+                <!-- a : anchor (ancre) -->
+                <a href="https://htmlcheatsheet.com" target="_blank">
+                    HTLM Cheat Sheet</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
