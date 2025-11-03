@@ -29,7 +29,3 @@ class IdentiteNouvelle {
 let lena = new IdentiteNouvelle("Lena", "Anderson", 24);
 let erin = new IdentiteNouvelle("Erin", "Moriarty", 30);
 console.log(`Age de Lena : ${lena.age} \nAge d'Erin : ${erin.age}`);
-
-const test = (a, b) => {
-  return a * b;
-};

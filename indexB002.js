@@ -1,12 +1,3 @@
-/*
-[Cours / Tuto 2025] Apprendre Javascript de A à Z – Le DOM (2/6)
-DOM = Document Object Model
-
-Lien : https://www.youtube.com/watch?v=bP4e5Kwz8EE
-
-Date : 28/06/2025
-*/
-
 /* *******************************************************************
 LES SELECTEURS
 
